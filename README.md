@@ -2,4 +2,4 @@
 
 Project for freeCodeCamp frontend certification.
 
-[live link](https://ttang8.github.io/markdown-previewer/)
+[live link](https://ttang8.github.io/js-calculator/)
