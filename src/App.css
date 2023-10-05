@@ -1,38 +1,71 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: grey;
+}
+
+.calculator {
+  width: 240px;
+  position: relative;
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+button {
+  position: relative;
+  height: 50px;
+  width: 60px;
+  color: white;
+  border: none;
+  outline: 1px solid black;
+  font-size: 20px;
+  cursor: default;
+  background-color: grey;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {
+  outline: 1px solid white;
+  color: black;
+  z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bigButton {
+  width: 120px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.equalSign {
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.outputScreen {
+  font-size: 30px;
   color: white;
+  background-color: black;
+  height: 35px;
+  outline: 1px solid black;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulaScreen {
+  font-size: 20px;
+  color: yellow;
+  background-color: black;
+  min-height: 30px;
+  outline: 1px solid black;
+  text-align: right;
+  word-wrap: break-word;
 }
